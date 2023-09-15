@@ -2,6 +2,9 @@ import turtle
 
 turtle.shape("turtle")
 
+def restart():
+    turtle.reset()
+
 def left():
     turtle.setheading(180)
     turtle.forward(50)
@@ -26,6 +29,7 @@ turtle.onkey(left, 'a')
 turtle.onkey(up, 'w')
 turtle.onkey(down, 's')
 turtle.onkey(right, 'd')
+turtle.onkey(restart, 'Escape')
 turtle.listen()
 
     
